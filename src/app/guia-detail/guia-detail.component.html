@@ -1,0 +1,12 @@
+<div *ngIf="guia">
+
+    <h2>{{guia.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{guia.id}}</div>
+    <div>
+        <label>name:
+    <input [(ngModel)]="guia.name" placeholder="name"/>
+  </label>
+        <div><span>Telefono: </span>{{guia.telefono}}</div>
+    </div>
+
+</div>

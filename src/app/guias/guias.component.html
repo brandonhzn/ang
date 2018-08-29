@@ -1,0 +1,14 @@
+<h2>Lista de Guìas</h2>
+<ul class="guias">
+    <li *ngFor="let guia of guias" [class.selected]="guia === selectedGuia" (click)="onSelect(guia)">
+        <span class="badge">{{guia.id}}</span> {{guia.name}}
+    </li>
+</ul>
+<app-guia-detail [guia]="selectedGuia"></app-guia-detail>
+<!--<ul class="guias">
+    <li *ngFor="let guia of guias">
+        <a routerLink="/detail/{{guia.id}}">
+            <span class="badge">{{guia.id}}</span> {{guia.name}}
+        </a>
+    </li>
+</ul> -->
